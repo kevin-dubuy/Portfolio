@@ -1,0 +1,17 @@
+.item {
+  width: 90%;
+  overflow: visible;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linejoin: square ;
+  stroke-linecap: round;
+}
+
+#svg-bg {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  place-content: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

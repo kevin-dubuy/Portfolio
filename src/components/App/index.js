@@ -6,6 +6,12 @@ import Header from '../Header';
 import Navigation from '../Navigation';
 import Resume from '../Resume';
 import Portfolio from '../Portfolio';
+import Modal1 from '../Modal1';
+import Modal2 from '../Modal2';
+import Modal3 from '../Modal3';
+import About from '../About';
+import Contact from '../Contact';
+import Footer from '../Footer';
 
 // == Import : local
 import './app.scss';
@@ -17,6 +23,12 @@ const App = () => (
     <Header />
     <Resume />
     <Portfolio />
+    <Modal1 />
+    <Modal2 />
+    <Modal3 />
+    <About />
+    <Contact />
+    <Footer />
   </div>
 );
 
