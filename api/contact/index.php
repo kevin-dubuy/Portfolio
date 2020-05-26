@@ -11,11 +11,13 @@ mail($to, $subject, $message, $headers);
 ?>
 
 <?php
-  $email_subject = "Submission was successful";
-  $email_message = "Form details\n\n";
-  $email_message .= "Name: {$data['name']}\n\n";
-  $email_message .= "Email: {$data['email']}\n\n";
-  $email_message .= "Message: {$data['message']}\n\n";
+  $email_subject = "Merci d'avoir rempli mon formulaire de contact";
+  $email_message = "Bonjour {$data['name']} et merci pour votre message.\n\n";
+  $email_message .= "Je vous répondrai dans les meilleurs délais (3 jours ouvrés maximum) sur votre boîte mail {$data['email']}.\n\n";
+  $email_message .= "Bien cordialement,\n";
+  $email_message .= "Kevin Dubuy.";
+
+
 
   // create email headers
 

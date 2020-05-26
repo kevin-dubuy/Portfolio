@@ -4,7 +4,7 @@ import React from 'react';
 import {FaTimes} from 'react-icons/fa';
 
 // == Assets
-import Img from '../../assets/img/portfolio/02-full.jpg';
+import Img from '../../assets/img/portfolio/alternance.jpg';
 
 // == CSS
 import './modal2.scss';
@@ -23,18 +23,20 @@ const Modal2 = () => (
           <div className="row">
             <div className="col-lg-8 mx-auto">
               <div className="modal-body">
-                <h2 className="text-uppercase">Project Name</h2>
-                <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 className="text-uppercase">Les alternants de l'Apec</h2>
+                <p className="item-intro text-muted">Témoignages de différents alternants au sein de l'Apec.</p>
                 <img className="img-fluid d-block mx-auto" src={Img} alt="" />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>Dans le cadre de la campagne de promotion de l'apprentissage #DémarreTaStory, nous avons réalisés des témoignages vidéo des alternants de l'Apec.</p>
+                <p>Une belle expérience qui m'a permis de pratiquer l'ensemble des étapes pour avoir un rendu final plutôt sympathique pour une première.</p>
+                <p>J'ai fait le tournage, le montage ainsi que l'habillage de cette série.</p>
+                <p><a href="https://youtu.be/GoKuSxC1ito?list=PL6j5FtOMxH7uLrrxz6ZItBGXKRZZmmmGh">Vidéo de Jordan, chargé de coordination et d'information client, disponible sur Youtube</a></p>
+                <p><a href="https://youtu.be/N-yaQiy-umA?list=PL6j5FtOMxH7uLrrxz6ZItBGXKRZZmmmGh">Vidéo de Maud, assistante relation médias, disponible sur Youtube</a></p>
                 <ul className="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
+                  <li className="modal-li">Année: 2019</li>
+                  <li className="modal-li">Vidéo</li>
                 </ul>
                 <button className="btn btn-primary" data-dismiss="modal" type="button">
                   <FaTimes />
-                  Close Project
                 </button>
               </div>
             </div>

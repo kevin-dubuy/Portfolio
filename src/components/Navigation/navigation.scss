@@ -18,3 +18,9 @@
   width: 30px;
   height: 30px;
 }
+
+#logo:hover {
+  width: 30px;
+  height: 30px;
+  filter: invert(1) sepia(1) saturate(8) hue-rotate(25deg) brightness(1.3);
+}

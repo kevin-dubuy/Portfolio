@@ -1,10 +1,10 @@
 import React from 'react';
 
 // == React Icons
-import {FaTimes} from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 // == Assets
-import Img from '../../assets/img/portfolio/03-full.jpg';
+import Img from '../../assets/img/portfolio/motion.jpg';
 
 // == CSS
 import './modal3.scss';
@@ -23,18 +23,21 @@ const Modal3 = () => (
           <div className="row">
             <div className="col-lg-8 mx-auto">
               <div className="modal-body">
-                <h2 className="text-uppercase">Project Name</h2>
-                <p className="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 className="text-uppercase">Les études de l'Apec</h2>
+                <p className="item-intro text-muted">Animations réalisées sur After Effects.
+                </p>
                 <img className="img-fluid d-block mx-auto" src={Img} alt="" />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <p>J'ai eu plusieurs projets vidéos à réaliser pour mettre en avant<br />les résultats des études de l'Apec.</p>
+                <p>L'occasion pour moi de pratiquer le Motion Design<br />et à certaines occasions de réaliser la voix off.</p>
+                <p>Une manière pour moi de pouvoir mettre ma créativité<br />au service de la communication.</p>
+                <p><a href="https://youtu.be/xjFCM-cA7XM">"Lorsque les Start-up recrutent" disponible sur Youtube</a></p>
+                <p><a href="https://youtu.be/dee07kFw1OQ">"Les secteurs qui recrutent" disponible sur Youtube</a></p>
                 <ul className="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
+                  <li className="modal-li">2016-2020</li>
+                  <li className="modal-li">Motion Design</li>
                 </ul>
                 <button className="btn btn-primary" data-dismiss="modal" type="button">
                   <FaTimes />
-                  Close Project
                 </button>
               </div>
             </div>

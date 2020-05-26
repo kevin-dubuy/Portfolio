@@ -4,9 +4,9 @@ import React from 'react';
 import {FaPlus} from 'react-icons/fa';
 
 // == Assets
-import Thumb1 from '../../assets/img/portfolio/01-thumbnail.jpg';
-import Thumb2 from '../../assets/img/portfolio/02-thumbnail.jpg';
-import Thumb3 from '../../assets/img/portfolio/03-thumbnail.jpg';
+import Thumb1 from '../../assets/img/portfolio/prendre-laire.gif';
+import Thumb2 from '../../assets/img/portfolio/alternance.jpg';
+import Thumb3 from '../../assets/img/portfolio/motion.jpg';
 
 // == CSS
 import './portfolio.scss';
@@ -32,8 +32,8 @@ const Portfolio = () => (
             <img className="img-fluid" src={Thumb1} alt="" />
           </a>
           <div className="portfolio-caption">
-            <h4>Threads</h4>
-            <p className="text-muted">Illustration</p>
+            <h4>Prendre l'aire (WIP)</h4>
+            <p className="text-muted">Web App</p>
           </div>
         </div>
         <div className="col-md-4 col-sm-6 portfolio-item">
@@ -46,8 +46,8 @@ const Portfolio = () => (
             <img className="img-fluid" src={Thumb2} alt="" />
           </a>
           <div className="portfolio-caption">
-            <h4>Explore</h4>
-            <p className="text-muted">Graphic Design</p>
+            <h4>Les alternants de l'Apec</h4>
+            <p className="text-muted">Vidéo</p>
           </div>
         </div>
         <div className="col-md-4 col-sm-6 portfolio-item">
@@ -60,8 +60,8 @@ const Portfolio = () => (
             <img className="img-fluid" src={Thumb3} alt="" />
           </a>
           <div className="portfolio-caption">
-            <h4>Finish</h4>
-            <p className="text-muted">Identity</p>
+            <h4>Les études de l'Apec</h4>
+            <p className="text-muted">Motion Design</p>
           </div>
         </div>
       </div>

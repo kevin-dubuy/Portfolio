@@ -11,9 +11,23 @@ import './navigation.scss';
 
 // == Composant
 class Navigation extends React.Component {
+  state = {
+    activeClass: '',
+  };
+
   constructor(props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      let activeClass = 'navbar-shrink';
+      if (window.scrollY < 500) {
+        activeClass = '';
+      }
+      this.setState({ activeClass });
+    });
   }
 
   componentWillUnmount() {
@@ -26,18 +40,20 @@ class Navigation extends React.Component {
   }
 
   render() {
+    const {activeClass} = this.state;
     return (
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+      <nav className={`navbar navbar-expand-lg navbar-light fixed-top ${activeClass}`} id="mainNav">
         <div className="container">
-        <a className="navbar-brand" onClick={this.scrollToTop}><img
+          <a className="navbar-brand" onClick={this.scrollToTop}><img
             src={Logo}
             id="logo"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
-          /></a>
+          />
+          </a>
           <a className="navbar-brand" onClick={this.scrollToTop}>Kevin Dubuy</a>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
+            Menu
             <i className="fas fa-bars" />
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">

@@ -1,6 +1,8 @@
 import React from 'react';
 // == React Icons
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import {
+  FaLinkedin, FaTwitter, FaGithub, FaEnvelope, FaPhone,
+} from 'react-icons/fa';
 
 // == CSS
 import './footer.scss';
@@ -33,12 +35,16 @@ const Footer = () => (
           </ul>
         </div>
         <div className="col-md-4">
-          <ul className="list-inline quicklinks">
+          <ul className="list-inline social-buttons">
             <li className="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="mailto:contact@kevin-dubuy.fr">
+                <FaEnvelope />
+              </a>
             </li>
             <li className="list-inline-item">
-              <a href="#">Terms of Use</a>
+              <a href="tel:+33610897935">
+                <FaPhone />
+              </a>
             </li>
           </ul>
         </div>
