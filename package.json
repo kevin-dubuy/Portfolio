@@ -56,7 +56,7 @@
     "framer-motion": "^1.11.0",
     "mocha": "^7.0.0",
     "prop-types": "^15.7.2",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
